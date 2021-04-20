@@ -1,0 +1,56 @@
+@media print{
+
+  body{
+    color: black !important;
+  }
+
+  .info{
+    /* break-after: always; */
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+
+  .team-info, .team-info img, .city-info img{
+    margin-bottom: 10px;
+  }
+
+  .city-info img {
+    margin-top: 10px;
+  }
+
+  .city-info {
+    border-top: 1px solid black;
+  }
+
+  .trophy-container h2 {
+    page-break-before: always;
+  } 
+
+  #players > div {
+    margin-bottom: 50px;
+  }
+
+  .other-pages{
+    display: none !important;
+  }
+
+  .shirts{
+      break-inside: avoid-page;
+    }
+
+  @page{
+    margin-top: 2px;
+
+    @bottom-left-corner{
+      content: counter(page);
+    }
+  }
+
+  .trophy-container{
+    page-break-after: always;
+  }
+}

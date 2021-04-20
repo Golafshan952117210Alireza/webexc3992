@@ -1,0 +1,298 @@
+@media screen and (min-width: 320px) and (max-width: 784px){
+  .info {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 1400px;
+  }
+
+  .info > div {
+    height: 675px;
+  }
+
+  .trophies {
+    flex-direction: column;
+  }
+
+  .legends #players {
+    flex-direction: column;
+    
+  }
+
+  .player {
+    margin-top : 10px;
+  }
+
+  .shirts {
+    height: 1300px;
+    align-items: center;
+  }
+
+  .kits {
+    flex-direction: column;
+    height: 1300px;
+  }
+
+  .other-pages{
+    flex-direction: column;
+    margin-top: 20px;
+    height: 700px;
+    
+  }
+
+}
+
+@media screen and (min-width: 785px) and (max-width: 1024px){
+  .info {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 650px;
+  }
+
+  .team-info, .city-info{
+    margin-right: 5px;
+  }
+
+  .trophies {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .legends #players {
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+
+  .player {
+    margin-top : 20px;
+  }
+
+  .legends{
+    height: 100%;
+    padding: 40px 0;
+  }
+
+  .shirts {
+    height: 500px;
+    
+  }
+
+  .shirts > h2 {
+    margin-right: 35%;
+  }
+
+  .kits {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .other-pages{
+    flex-direction: row;
+    margin-top: 20px;
+    height: 300px;
+  }
+
+}
+
+@media screen and (min-width: 1025px){
+  .info {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 650px;
+  }
+
+  .team-info, .city-info{
+    margin: 5px;
+  }
+
+  .trophies {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .legends #players {
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+
+  .player {
+    margin-top : 20px;
+  }
+
+  .legends{
+    height: 100% ;
+    padding: 40px 0;
+  }
+
+  .shirts {
+    height: 600px;
+  }
+
+  .shirts > h2 {
+    margin-right: 35%;
+  }
+
+  .kits {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .other-pages{
+    flex-direction: row;
+    margin-top: 20px;
+    height: 300px;
+  }
+
+}
+
+
+body{
+  background-color: #b71c1c;
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  height: 350px;
+  width: 250px;
+}
+
+body > div{
+  margin: 10px 0 ;
+}
+
+/* hr{
+  display: none;
+} */
+
+.team-info, .city-info{
+  padding-right: 5px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+}
+
+.info > div {
+  background-color: #212121;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.trophies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.trophies > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 300px;
+  margin-top: 10px;
+
+  height: 500px;
+  
+  background-color: #212121;
+}
+
+.trophy-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.legends {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #212121;
+  width: 95%;
+  align-items: center;
+
+}
+
+.legends #players {
+  display: flex;
+  justify-content: space-evenly ;
+  flex-wrap: wrap;
+  
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px dashed #b71c1c;
+}
+
+.shirts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+  background-color: #121212;
+  width: 95%;
+}
+
+.kits {
+  display: flex;
+}
+
+.kit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+}
+
+#kit1 {
+  border: 2px dashed #b71c1c;
+}
+
+#kit2 {
+  border: 2px dashed #e0e0e0;
+}
+
+#kit3 {
+  border: 2px solid #0277bd;
+}
+
+.team-info, .city-info, .trophies > div, .legends, .shirts, .other-pages{
+  border-radius: 10px;
+}
+
+.other-pages {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 95%;
+  background-color: #212121;
+}
+
+.other-pages .page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.other-pages a {
+  color: #f5f5f5;
+}
+
+.other-pages img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+}

@@ -1,0 +1,49 @@
+@media print {
+  body{
+    font-size: 13pt;
+  
+  }
+
+  div[class='fav-movies']{
+    break-before: page;
+  }
+
+  td, th{
+    padding: 10px 60px;
+  }
+
+  .genral-knowledge{
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+  }
+
+  .genral-information{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  
+
+  .fav-movies, .fav-series{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .other-pages{
+    display: none;
+  }
+  
+  .genral-knowledge, .fav, .fav-movies, .fav-series, .contact, .other-pages {
+    width: 100%;
+  }
+  
+
+  @page {
+    @bottom-right-corner{
+      content: counter(page);
+    }
+  }
+}
